@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raad de Logo's Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div id="game" class="container mx-auto p-6 max-w-xl bg-white rounded-lg shadow-lg">
+    <h1 class="text-3xl font-bold text-center mb-6">Raad de Logos!</h1>
+    <p class="text-center">Als front-end developer niveau 3 zijn we veel bezig met het creeëren en analyseren van logo's. 
+    In deze game ga je 20 logo's zien van bekende bedrijven en organisaties.
+    Aan jou de taak om te raden welk bedrijf of organisatie er achter het logo zit!
+    </p>
+    <div id="logo-container" class="flex justify-center mt-8 mb-8">
+      <img id="logo-image" class="w-48 h-48 object-contain" src="" alt="Logo" />
+    </div>
+    <input
+      id="user-input"
+      type="text"
+      placeholder="Raad het bedrijf of organisatie"
+      class="w-full border border-gray-300 rounded p-2 mb-4"
+    />
+    <button id="submit-button" class="bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600">Invoeren</button>
+    <p id="feedback" class="text-center mt-4 text-lg font-semibold"></p>
+    <p id="score" class="text-center mt-2">Score: 0/20</p>
+    <button id="next-button" class="bg-green-500 text-white py-2 px-4 rounded w-full mt-4 hover:bg-green-600 hidden">Volgende logo</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
