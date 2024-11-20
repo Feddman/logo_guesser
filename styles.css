@@ -1,0 +1,39 @@
+/* Burst effect for correct and incorrect answers */
+.burst-correct {
+    animation: burst-green 0.5s ease-out;
+  }
+  
+  .burst-incorrect {
+    animation: burst-red 0.5s ease-out;
+  }
+  
+  @keyframes burst-green {
+    0% { background-color: #d4f5d4; }
+    100% { background-color: transparent; }
+  }
+  
+  @keyframes burst-red {
+    0% { background-color: #f8d4d4; }
+    100% { background-color: transparent; }
+  }
+  
+  /* Spinner list scroll animation */
+@keyframes scrollToPosition {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-50%); }
+  }
+  
+  .spinner-container {
+    overflow: hidden;
+    height: 200px; /* Set the height based on the number of entries shown */
+  }
+  
+  .hall-of-fame-list {
+    animation: scrollToPosition 2s ease-out forwards;
+  }
+  
+  .player-highlight {
+    background-color: #d4f5d4; /* Light green to highlight */
+    font-weight: bold;
+  }
+  
